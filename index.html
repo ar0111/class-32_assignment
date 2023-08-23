@@ -6,6 +6,19 @@
     <title>Meal DB</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
 
+    <style>
+
+        #error-area{
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .danger{
+            font-size: 25px;
+            font-weight: bold;
+            color: red;
+        }
+    </style>
 </head>
 <body>
     <!-- <h1 class="bg-success">Hello World</h1> -->
@@ -13,7 +26,7 @@
         <h1 class="text-center pb-2">Search Your Favourite Food</h1>
         <div class="w-50 mx-auto d-flex">
             <input class="form-control me-2" id="searchInput" type="text" placeholder="Search Food">
-            <button onclick="searchFood()" class="btn btn-dark">Search</button>
+            <button id="myBtn" onclick="searchFood()" class="btn btn-dark">Search</button>
         </div>
 
         <div id="error-area">
